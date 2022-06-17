@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nggolek Job</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="CSS/perusahaan.css">
+    <!--Icon-->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--Link Dark Mode-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class='bx bxl-squarespace'></i> Golek Job</a>
+
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="lowongan.html">Lowongan</a></li>
+            <li><a href="aktivitas.html">Aktivitas</a></li>
+            <li><a href="home.perusahaan.html">Perusahaan</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <i class='bx bx-menu'id="menu-icon"></i>
+            <i><ion-icon name="moon-outline" class="switch"></ion-icon></i>
+            <a href="forumdiskusi.html"><i class='bx bx-conversation' id="group-icon"></i></a>
+            <i class='bx bx-user' id="user-icon"></i>
+        </div>
+
+        <!-- User -->
+        <div class="user">
+            <h2>Login Now</h2>
+            <input type="email" placeholder="Username">
+            <input type="password" name="" id="" placeholder="Password">
+            <input type="submit" value="Login" class="login-btn">
+            <p>Lupa Password <a href="#">Klik disini</a></p>
+            <p>Belum punya akun?<a href="#">Sign Up</a></p>
+
+        </div>
+    </header>
+
+    <section class="homeperus">
+        <div class="prsh">
+            <h1>CARI KARYAWAN UNTUK PERUSAHAANMU</h1>
+            <a href="create job1.html" class="btn-prsh">BUAT LOWONGAN</a>
+            <a href="indeks.html" class="btn-prsh1">LIHAT PELAMAR</a>
+        </div>
+        <div class="shape3"></div>
+        <div class="prsh-img1">
+            <img src="ASSET/pngwing 4.png" alt="">
+        </div>
+        <div class="prsh-text1">
+            <h3>FIND EMPLOYEES</h3>
+            <div class="line1"></div>
+            <p>
+                Kami akan membantu perushaanmu untuk 
+                menemukan karyawan yang sesuai dengan kebutuhan 
+                perusahaan
+            </p>
+        </div>
+        <div class="shape4"></div>
+        <div class="prsh-img2">
+            <img src="ASSET/pngwing 5.png" alt="">
+        </div>
+        <div class="prsh-text2">
+            <h3>EMPLOYEES</h3>
+            <div class="line2"></div>
+            <p>
+               Lebih dari 2000 + pelamar siap kerja yang sudah bergabung dengan kami
+            </p>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(".switch").click(function(){
+            $("body").toggleClass("dark-mode");
+            if($("body").hasClass("dark-mode")){
+                $(".switch").attr("name","sunny-outline");
+            } else{
+                $(".switch").attr("name","moon-outline");
+            }
+        });
+    </script>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>

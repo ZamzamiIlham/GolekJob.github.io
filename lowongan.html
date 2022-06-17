@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nggolek Job</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--Icon-->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--Link Dark Mode-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class='bx bxl-squarespace'></i> Golek Job</a>
+
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="lowongan.html">Lowongan</a></li>
+            <li><a href="aktivitas.html">Aktivitas</a></li>
+            <li><a href="home.perusahaan.html">Perusahaan</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <i><ion-icon name="moon-outline" class="switch"></ion-icon></i>
+            <i class='bx bx-menu'id="menu-icon"></i>
+            <i class='bx bx-conversation' id="group-icon"></i>
+            <i class='bx bx-user' id="user-icon"></i>
+        </div>
+
+        <!-- User -->
+        <div class="user">
+            <h2>Login Now</h2>
+            <input type="email" placeholder="Username">
+            <input type="password" name="" id="" placeholder="Password">
+            <input type="submit" value="Login" class="login-btn">
+            <p>Lupa Password <a href="#">Klik disini</a></p>
+            <p>Belum punya akun?<a href="#">Sign Up</a></p>
+
+        </div>
+    </header>
+    <!--Lowongan-->
+    <section class="lowongan">
+        <section class="lowongan.html">
+            <div class="wrapper">
+                <div class="search-box">
+                    <input class="search-txt" type="jabatan" id="" placeholder="Cari Jabatan">
+                    <a href="#" class="search-btn">
+                    <i class='bx bx-search'></i>
+                    </a>
+                </div>
+                <div class="search-box">
+                    <input class="search-txt" type="lokasi" id="" placeholder="Cari Lokasi">
+                    <a href="#" class="search-btn">
+                    <i class='bx bxs-map'></i>
+                    </a>
+                </div>
+                <div class="search-box">
+                    <input class="search-txt" type="lokasi" id="" placeholder="Cari Jenis">
+                    <a href="#" class="search-btn">
+                    <i class='bx bxs-briefcase'></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="populer" id="populer">
+                <div class="heading">
+                    <h1>Populer</h1>
+                    <a href="viewall.html">View All</a>
+                </div>
+                <div class="gallery">
+                    <div class="content">
+                        <img src="ASSET/Google.png" alt="">
+                        <h1>Google Inch</h1>
+                        <p>Front End Programing</p>
+                        <p>Lulusan S1/S2/S3</p>
+                        <p>IPK 3,2</p>
+                        <button class="detail"><a href="detail.html">Lihat Detail</a></button>
+                    </div>
+                    <div class="content">
+                        <img src="ASSET/Dannon.png" alt="">
+                        <h1>PT Dannon</h1>
+                        <p>Digital Marketing</p>
+                        <p>Lulusan S1/S2/S3</p>
+                        <p>IPK 3,2</p>
+                        <button class="detail">Lihat Detail</button>
+                    </div>
+                    <div class="content">
+                        <img src="ASSET/BIndo.png" alt="">
+                        <h1>Bank Indonesia</h1>
+                        <p>Front End Programing</p>
+                        <p>Lulusan S1/S2/S3</p>
+                        <p>IPK 3,2</p>
+                        <button class="detail">Lihat Detail</button>
+                    </div>
+                </div>
+        </section>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(".switch").click(function(){
+            $("body").toggleClass("dark-mode");
+            if($("body").hasClass("dark-mode")){
+                $(".switch").attr("name","sunny-outline");
+            } else{
+                $(".switch").attr("name","moon-outline");
+            }
+        });
+    </script>
+    <script src="JS/main.js"></script> 
+</body>
+</html>

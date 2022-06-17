@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nggolek Job</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--Icon-->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"><meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golek Job</title>
+     <!--Link Dark Mode-->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class='bx bxl-squarespace'></i> Golek Job</a>
+
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="lowongan.html">Lowongan</a></li>
+            <li><a href="aktivitas.html">Aktivitas</a></li>
+            <li><a href="home.perusahaan.html">Perusahaan</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <i><ion-icon name="moon-outline" class="switch"></ion-icon></i>
+            <i class='bx bx-menu'id="menu-icon"></i>
+            <i class='bx bx-conversation' id="group-icon"></i>
+            <i class='bx bx-user' id="user-icon"></i>
+        </div>
+
+        <!-- User -->
+        <div class="user">
+            <h2>Login Now</h2>
+            <input type="email" placeholder="Username">
+            <input type="password" name="" id="" placeholder="Password">
+            <input type="submit" value="Login" class="login-btn">
+            <p>Lupa Password <a href="#">Klik disini</a></p>
+            <p>Belum punya akun?<a href="#">Sign Up</a></p>
+
+        </div>
+    </header>
+    <!--Seleski Detail-->
+    <section class="seleksi-detail">
+        <div class="informasi-atas">
+            <div class="info">
+                <h1>SELAMAT ANDA DINYATAKAN LULUS SELEKSI TAHAP 1</h1>
+            </div>
+        </div>
+        <div class="informasi-tengah">
+            <div class="foto">
+                <img src="ASSET/Group 35.png" alt="">
+                <div class="data-diri">
+                    <h1>Ilham Zamzami</h1>
+                    <h5 class="status">Seleksi tahap 1</h5>
+                    <h5 class="posisi">Front End Enginering</h5>
+                </div>
+            </div>
+            <div class="pengumuman">
+                <H3 class="atas">JADWAL WAWANCARA</H3>
+                <h4 class="info"><i class='bx bx-calendar'></i>Minggu, 28 Januaeri 2022</h4>
+                <h4 class="info"><i class='bx bx-time-five'></i>09.00 WIB - SELESAI</h4>
+                <h4 class="info"><i class='bx bx-map'></i>Jln Kahuripan Jakarta</h4>
+            </div>
+        </div>
+        <div class="informasi-bawah">
+            <div class="ttl">
+                <h3 class="h3">Tempat tanggal lahir</h3>
+                <h3>Jember, 17 Juni 2002</h3>
+            </div>
+            <div class="alamat">
+                <h3 class="h3">Alamat</h3>
+                <h3>PPLI NO 57 Kecamatan Arjasa, Kabupaten Jember</h3>
+            </div>
+            <div class="email">
+                <h3 class="h3">Note :</h3>
+                <p>Informasi lebih lanjut <br> akan disampaikan melalui gmail</p>
+            </div>
+        </div>
+        <div class="informasi-bawah">
+            <div class="email">
+                <h3 class="h3">Email</h3>
+                <h3>zamzamilham@gmail.com</h3>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(".switch").click(function(){
+            $("body").toggleClass("dark-mode");
+            if($("body").hasClass("dark-mode")){
+                $(".switch").attr("name","sunny-outline");
+            } else{
+                $(".switch").attr("name","moon-outline");
+            }
+        });
+    </script>
+    <script src="JS/main.js"></script>    
+</body>
+</html>
